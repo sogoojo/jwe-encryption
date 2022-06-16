@@ -343,4 +343,8 @@ function toEncodedString(value, fromFormat, toFormat) {
   }
 }
 
+function shout(){
+  return "you shouted";
+}
+
 module.exports = JweCrypto;
