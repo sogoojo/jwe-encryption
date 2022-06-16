@@ -23,6 +23,9 @@ function JweCrypto(config) {
 
   this.encryptedKeyFieldName = config.encryptedKeyFieldName;
 
+  this.toShout = function (){
+    console.log("SHouted")
+  }
   this.encryptData = function (options) {
     const data = jsonToString(options.data);
 
@@ -345,6 +348,6 @@ function toEncodedString(value, fromFormat, toFormat) {
 
 function shout(){
   return "you shouted";
-}
+};
 
 module.exports = JweCrypto;
